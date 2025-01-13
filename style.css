@@ -1,0 +1,72 @@
+/* style.css */
+#sheet {
+    display: grid;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  
+  #sheet div {
+    border: 1px solid lightgray;
+    min-width: 80px;
+    min-height: 25px;
+    padding: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-align: left; /* Default text alignment */
+  }
+  
+  #sheet .header-cell {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #formula-bar {
+    padding: 5px;
+  }
+  
+  #formula-input {
+    width: 98%;
+    box-sizing: border-box;
+  }
+
+.toolbar-button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.toolbar-button:hover {
+    background-color: #e0e0e0;
+}
+
+.toolbar-select, .toolbar-color-picker {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.toolbar-select:hover, .toolbar-color-picker:hover {
+    background-color: #e0e0e0;
+}
+
+.header-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+}
+
+.header-cell {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sheet-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+}

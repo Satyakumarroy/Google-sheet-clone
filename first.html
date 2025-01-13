@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Sheets Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toolbar">
+        <button class="toolbar-button" onclick="applyFormat('bold')">B</button>
+        <button class="toolbar-button" onclick="applyFormat('italic')">I</button>
+        <select id="font-size-dropdown" class="toolbar-select" onchange="applyFormat('fontSize')">
+            <option value="">Font Size</option>
+            <option value="10px">10px</option>
+            <option value="12px">12px</option>
+            <option value="14px">14px</option>
+            <option value="16px">16px</option>
+            <option value="18px">18px</option>
+            <option value="20px">20px</option>
+        </select>
+        <input type="color" id="color-picker" class="toolbar-color-picker" onchange="applyFormat('color')" title="Font Color">
+    </div>
+    <div id="formula-bar">
+        <input type="text" id="formula-input">
+    </div>
+    <div id="sheet"></div>
+    <script src="script.js"></script>
+</body>
+</html>
